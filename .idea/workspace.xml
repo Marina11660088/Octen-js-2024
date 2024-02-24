@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d2b5429-c8ae-4af3-9420-535e4f03b80d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Octen-js-2024.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson1/index.html" afterDir="false" />
+    <list default="true" id="5d2b5429-c8ae-4af3-9420-535e4f03b80d" name="Changes" comment="lesson1hw">
+      <change afterPath="$PROJECT_DIR$/lesson2/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,11 +47,33 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1708594789938</updated>
-      <workItem from="1708594790974" duration="4475000" />
+      <workItem from="1708594790974" duration="16663000" />
     </task>
+    <task id="LOCAL-00001" summary="lesson1">
+      <option name="closed" value="true" />
+      <created>1708600450813</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1708600450813</updated>
+    </task>
+    <task id="LOCAL-00002" summary="lesson1hw">
+      <option name="closed" value="true" />
+      <created>1708600709645</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1708600709645</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="lesson1" />
+    <MESSAGE value="lesson1hw" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson1hw" />
   </component>
 </project>
