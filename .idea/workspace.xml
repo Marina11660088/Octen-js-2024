@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d2b5429-c8ae-4af3-9420-535e4f03b80d" name="Changes" comment="lesson3hw">
-      <change afterPath="$PROJECT_DIR$/lesson4/index.html" afterDir="false" />
+    <list default="true" id="5d2b5429-c8ae-4af3-9420-535e4f03b80d" name="Changes" comment="lesson4hw">
+      <change afterPath="$PROJECT_DIR$/draznilka/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson5/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Octen-js-2024.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Okten-js-2024.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson4/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/lesson4/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,21 +29,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/marinapaputsya/IdeaProjects/Okten-js-2024",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -52,7 +57,12 @@
       <workItem from="1708870625599" duration="1532000" />
       <workItem from="1708892716200" duration="817000" />
       <workItem from="1708946810789" duration="160000" />
-      <workItem from="1708947419247" duration="31766000" />
+      <workItem from="1708947419247" duration="34501000" />
+      <workItem from="1709469563144" duration="3000" />
+      <workItem from="1709469573937" duration="2000" />
+      <workItem from="1709469580409" duration="2000" />
+      <workItem from="1709472107722" duration="1231000" />
+      <workItem from="1709499741254" duration="16096000" />
     </task>
     <task id="LOCAL-00001" summary="lesson1">
       <option name="closed" value="true" />
@@ -86,7 +96,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709065301687</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="lesson4hw">
+      <option name="closed" value="true" />
+      <created>1709374685370</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1709374685371</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -97,7 +115,8 @@
     <MESSAGE value="lesson1hw" />
     <MESSAGE value="lesson2hw" />
     <MESSAGE value="lesson3hw" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson3hw" />
+    <MESSAGE value="lesson4hw" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson4hw" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
