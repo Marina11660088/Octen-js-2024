@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d2b5429-c8ae-4af3-9420-535e4f03b80d" name="Changes" comment="lesson5hw">
-      <change afterPath="$PROJECT_DIR$/lesson6/index.html" afterDir="false" />
+    <list default="true" id="5d2b5429-c8ae-4af3-9420-535e4f03b80d" name="Changes" comment="lesson6hw">
+      <change afterPath="$PROJECT_DIR$/lesson8/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,6 +37,9 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "preferences.keymap",
     "vue.rearranger.settings.migration": "true"
   }
@@ -58,7 +61,7 @@
       <workItem from="1709469573937" duration="2000" />
       <workItem from="1709469580409" duration="2000" />
       <workItem from="1709472107722" duration="1231000" />
-      <workItem from="1709499741254" duration="42905000" />
+      <workItem from="1709499741254" duration="65384000" />
     </task>
     <task id="LOCAL-00001" summary="lesson1">
       <option name="closed" value="true" />
@@ -116,7 +119,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709578572981</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="lesson6hw">
+      <option name="closed" value="true" />
+      <created>1709750221293</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1709750221293</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,7 +140,8 @@
     <MESSAGE value="lesson3hw" />
     <MESSAGE value="lesson4hw" />
     <MESSAGE value="lesson5hw" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson5hw" />
+    <MESSAGE value="lesson6hw" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson6hw" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
