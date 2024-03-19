@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d2b5429-c8ae-4af3-9420-535e4f03b80d" name="Changes" comment="lesson8hw">
-      <change afterPath="$PROJECT_DIR$/lesson9/index.html" afterDir="false" />
+    <list default="true" id="5d2b5429-c8ae-4af3-9420-535e4f03b80d" name="Changes" comment="lesson9hw">
+      <change afterPath="$PROJECT_DIR$/lesson10/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson10/sessions.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +62,7 @@
       <workItem from="1709469573937" duration="2000" />
       <workItem from="1709469580409" duration="2000" />
       <workItem from="1709472107722" duration="1231000" />
-      <workItem from="1709499741254" duration="86606000" />
+      <workItem from="1709499741254" duration="117906000" />
     </task>
     <task id="LOCAL-00001" summary="lesson1">
       <option name="closed" value="true" />
@@ -135,7 +136,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710362695395</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="lesson9hw">
+      <option name="closed" value="true" />
+      <created>1710518495076</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1710518495076</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,7 +159,8 @@
     <MESSAGE value="lesson5hw" />
     <MESSAGE value="lesson6hw" />
     <MESSAGE value="lesson8hw" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson8hw" />
+    <MESSAGE value="lesson9hw" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson9hw" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

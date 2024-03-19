@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .boxNumber {
+            width: 200px;
+            height: 200px;
+            font-size: 30px;
+            background-color: pink;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+       tr, td, #table {
+            border: 1px solid black;
+        }
+
+    </style>
+</head>
+<body>
+<h1>Введіть дані</h1>
+<form id="myForm">
+    <label for="name">Ім'я:</label>
+    <input type="text" id="name" name="name" placeholder="name" required>
+    <label for="surname">Прізвище:</label>
+    <input type="text" id="surname" name="surname"placeholder="surname" required><br><br>
+    <label for="age">Вік:</label>
+    <input type="number" id="age" name="age" placeholder="age" required>
+    <button type="button" onclick="submitForm()" >Send</button>
+</form>
+
+<p>///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</p>
+
+<div id="boxNumber" class="boxNumber">
+    0
+</div>
+
+<p>///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</p>
+
+<div id="box"></div>
+
+<p>///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</p>
+
+<button id="prev">prev</button>
+<button id="next">next</button>
+
+<script>
+    // Стоврити форму з трьома полями для name,surname,age та кнопкою. При натисканні на кнопку зчитати данні з полів, та вивести об'єкт в документ. Іншими словами : заповниои форму, натиснули кнопку, під формою з'явився блок з вашим об'єктом
+
+
+
+    // function submitForm() {
+    //     let name = document.getElementById("name").value;
+    //
+    //     let surname = document.getElementById("surname").value;
+    //     let age = document.getElementById("age").value;
+    //
+    //     let user = {name: name, surname: surname, age: age};
+    //
+    //     let boxDiv = document.getElementById("box");
+    //     boxDiv.innerHTML = JSON.stringify(user);
+    // }
+    // submitForm()
+
+
+
+
+    // ==========================
+    // є сторінка, на якій є блок, я кому знаходиьтся цифра. написати код, який при кожному перезавантажені сторінки буде додавати до неї +1
+
+    // let firstNumber = localStorage.getItem("firstNumbers") || 0;
+    //
+    // firstNumber++;
+    //
+    // localStorage.setItem("firstNumbers", firstNumber);
+    //
+    // let nextNumber = document.getElementById("boxNumber");
+    //
+    // nextNumber.textContent = firstNumber;
+
+
+
+
+
+
+    // ==========================
+    // Є сторінка index.html (назва довільна), при відвідуванні якої в локальне сховще, в масив sessions зберігається інформація про дату та час відвідування сторінки. Є ще сторінка sessions.html (назва довільна), при відвідуванні якої потрібно відмалювати всю інформацію про відвідування сторінки index.html. Інфу НЕ виводити в консоль, а побудувати дом структуру під кожну сессію
+
+
+    // const json = localStorage.getItem('sessions');
+    // const sessions = json ? JSON.parse(json) : [];
+    //
+    // sessions.push({
+    //     date: new Date().toISOString()
+    // });
+    //
+    // localStorage.setItem('sessions', JSON.stringify(sessions));
+
+
+
+
+
+    // =========================
+    //     зробити масив на 100 об'єктів та дві кнопки prev next
+    // при завантажені сторінки з'являються перші 10 об'єктів.
+    //     При натисканні next виводяться настпні 10 об'єктів
+    // При натисканні prev виводяться попередні 10 об'єктів
+    //
+//  let users = [
+//      {name:'Andriy', age: 43, status: true},
+//      {name:'Andriy', age: 43, status: true},
+//      {name:'Andriy', age: 43, status: true},
+//      {name:'Andriy', age: 43, status: true},
+//      {name:'Andriy', age: 43, status: true},
+//      {name:'Andriy', age: 43, status: true},
+//      {name:'Andriy', age: 43, status: true},
+//      {name:'Andriy', age: 43, status: true},
+//      {name:'Andriy', age: 43, status: true},
+//      {name:'Andriy', age: 43, status: true},
+//      {name:'Olga', age: 43, status: true},
+//      {name:'Olga', age: 43, status: true},
+//      {name:'Olga', age: 43, status: true},
+//      {name:'Olga', age: 43, status: true},
+//      {name:'Olga', age: 43, status: true},
+//      {name:'Olga', age: 43, status: true},
+//      {name:'Olga', age: 43, status: true},
+//      {name:'Olga', age: 43, status: true},
+//      {name:'Olga', age: 43, status: true},
+//      {name:'Olga', age: 43, status: true},
+//      {name:'Ira', age: 33, status: false},
+//      {name:'Ira', age: 33, status: false},
+//      {name:'Ira', age: 33, status: false},
+//      {name:'Ira', age: 33, status: false},
+//      {name:'Ira', age: 33, status: false},
+//      {name:'Ira', age: 33, status: false},
+//      {name:'Ira', age: 33, status: false},
+//      {name:'Ira', age: 33, status: false},
+//      {name:'Ira', age: 33, status: false},
+//      {name:'Ira', age: 33, status: false},
+//      {name:'Sergiy', age: 23, status: true},
+//      {name:'Sergiy', age: 23, status: true},
+//      {name:'Sergiy', age: 23, status: true},
+//      {name:'Sergiy', age: 23, status: true},
+//      {name:'Sergiy', age: 23, status: true},
+//      {name:'Sergiy', age: 23, status: true},
+//      {name:'Sergiy', age: 23, status: true},
+//      {name:'Sergiy', age: 23, status: true},
+//      {name:'Sergiy', age: 23, status: true},
+//      {name:'Sergiy', age: 23, status: true},
+//      {name:'Ivan', age: 53, status: true},
+//      {name:'Ivan', age: 53, status: true},
+//      {name:'Ivan', age: 53, status: true},
+//      {name:'Ivan', age: 53, status: true},
+//      {name:'Ivan', age: 53, status: true},
+//      {name:'Ivan', age: 53, status: true},
+//      {name:'Ivan', age: 53, status: true},
+//      {name:'Ivan', age: 53, status: true},
+//      {name:'Ivan', age: 53, status: true},
+//      {name:'Ivan', age: 53, status: true},
+//      {name:'Andriy', age: 43, status: true},
+//      {name:'Andriy', age: 43, status: true},
+//      {name:'Andriy', age: 43, status: true},
+//      {name:'Andriy', age: 43, status: true},
+//      {name:'Andriy', age: 43, status: true},
+//      {name:'Andriy', age: 43, status: true},
+//      {name:'Andriy', age: 43, status: true},
+//      {name:'Andriy', age: 43, status: true},
+//      {name:'Andriy', age: 43, status: true},
+//      {name:'Andriy', age: 43, status: true},
+//      {name:'Olga', age: 43, status: true},
+//      {name:'Olga', age: 43, status: true},
+//      {name:'Olga', age: 43, status: true},
+//      {name:'Olga', age: 43, status: true},
+//      {name:'Olga', age: 43, status: true},
+//      {name:'Olga', age: 43, status: true},
+//      {name:'Olga', age: 43, status: true},
+//      {name:'Olga', age: 43, status: true},
+//      {name:'Olga', age: 43, status: true},
+//      {name:'Olga', age: 43, status: true},
+//      {name:'Ira', age: 33, status: false},
+//      {name:'Ira', age: 33, status: false},
+//      {name:'Ira', age: 33, status: false},
+//      {name:'Ira', age: 33, status: false},
+//      {name:'Ira', age: 33, status: false},
+//      {name:'Ira', age: 33, status: false},
+//      {name:'Ira', age: 33, status: false},
+//      {name:'Ira', age: 33, status: false},
+//      {name:'Ira', age: 33, status: false},
+//      {name:'Ira', age: 33, status: false},
+//      {name:'Sergiy', age: 23, status: true},
+//      {name:'Sergiy', age: 23, status: true},
+//      {name:'Sergiy', age: 23, status: true},
+//      {name:'Sergiy', age: 23, status: true},
+//      {name:'Sergiy', age: 23, status: true},
+//      {name:'Sergiy', age: 23, status: true},
+//      {name:'Sergiy', age: 23, status: true},
+//      {name:'Sergiy', age: 23, status: true},
+//      {name:'Sergiy', age: 23, status: true},
+//      {name:'Sergiy', age: 23, status: true},
+//      {name:'Ivan', age: 53, status: true},
+//      {name:'Ivan', age: 53, status: true},
+//      {name:'Ivan', age: 53, status: true},
+//      {name:'Ivan', age: 53, status: true},
+//      {name:'Ivan', age: 53, status: true},
+//      {name:'Ivan', age: 53, status: true},
+//      {name:'Ivan', age: 53, status: true},
+//      {name:'Ivan', age: 53, status: true},
+//      {name:'Ivan', age: 53, status: true},
+//      {name:'Ivan', age: 53, status: true},
+//  ];
+//  let start = 0;
+//  let step = 10;
+//  let limit =start+step;
+//  const btnPrev = document.getElementById('prev');
+//  const btnNext = document.getElementById('next');
+//     document.body.append(btnPrev, btnNext);
+// btnNext.onclick = function () {
+//     for (let i=start; i<limit; i++){
+//         if (i<users.length){
+//         console.log(users[i]);
+//         }
+//     }
+//     start=limit;
+//     limit=limit+step
+// }
+// //друга кнопка не працює
+//     btnPrev.onclick = function () {
+//         for (let y=start+10; y>limit; y--){
+//             if (y<users.length){
+//                 console.log(users[y]);
+//             }
+//         }
+//         start=limit;
+//         limit=limit+step
+//     }
+
+
+
+
+
+
+
+    //
+    // - Створити довільний елемент з id = text та створити кнопку.Використовуючи JavaScript, зробіть так, щоб при натисканні на кнопку зникав елемент з id="text".
+
+    // const p = document.createElement('p');
+    // p.id = 'text';
+    // console.log (p)
+    // const btn = document.createElement('button');
+    //
+    // p.innerText = 'Добрий день';
+    // btn.innerText = 'Текст зникни';
+    //
+    // btn.onclick = () => p.style.display = 'none';
+    // document.body.append(p, btn);
+
+
+
+
+
+    //     - створити інпут який приймає вік людини та кнопку яка підтверджує дію.При натисканні на кнопку зчитати інформацію з інпуту та перевірити вік чи меньше він ніж 18, та повідомити про це користувача
+    //
+    // const input = document.createElement('input');
+    // input.type='number';
+    //
+    // const btn = document.createElement('button');
+    // btn.innerText = 'перевірка';
+    // document.body.append(input, btn);
+    //
+    // btn.onclick= function() {
+    //     if (input.value<18){
+    // const p1 =document.createElement('p');
+    // p1.innerText = 'Увага! Ще немає 18';
+    // document.body.appendChild(p1);
+    // } else {
+    //         const p2 =document.createElement('p');
+    //         p2.innerText = 'Вітаю';
+    //         document.body.appendChild(p2);
+    //     }
+    // }
+
+
+    //
+    // *** Створити 3 інпута та кнопку. Один визначає кількість рядків, другий - кількість ячеєк, третій вмиіст ячеєк.
+    //     При натисканні кнопки, вся ця інформація зчитується і формується табличка, з відповідним вмістом.
+
+    // const input1 = document.createElement('input');
+    //  input1.type='number';
+    //  input1.id='input1'
+    // const input2 = document.createElement('input');
+    // input2.type='number';
+    // input2.id='input2'
+    // const input3 = document.createElement('input');
+    // input3.type='text';
+    // input3.id='input3'
+    //
+    //  const btn = document.createElement('button');
+    //  btn.innerText = 'формування таблиці';
+    //
+    // document.body.append(input1, input2, input3, btn);
+    //
+    // btn.onclick= function() {
+    //     const table=document.createElement('table');
+    //     table.id='table';
+    //    for (i=0; i<input1.value; i++){
+    //        const tr =document.createElement('tr');
+    //        for (y=0; y<input2.value; y++){
+    //            const td = document.createElement('td');
+    //            td.innerText = `${input3.value}`;
+    //            tr.appendChild(td);
+    //        }
+    //        table.appendChild(tr);
+    //    }
+    //   document.body.appendChild(table);
+    //  }
+
+
+
+    // (Додатковачастина для завдання)
+    //
+
+
+    // *** (подібне було вище, але...будьте уважні в другій частині) створити сторінку з довільним блоком, в середині якого є значення "100грн"
+    // при перезавантаженні сторінки до значаення додається по 10грн, але !!!
+    //     зміна ціни відбувається тільки на перезавантаження, які відбулись пізніше ніж 10 секунд після попереднього.
+    //     При перезавантаженні, яке відбулось раніше ніж минуло 10 секунд - нічого не відбувається
+</script>
+
+</body>
+</html>
