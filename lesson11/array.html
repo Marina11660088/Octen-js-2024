@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .green {
+            background-color: darkseagreen;
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+<div ><a class="green" href="index.html">повернутися</a></div>
+<script>
+    console.log(location)
+    let userId = new URL (location.href).searchParams.get('id');
+    console.log(userId)
+    let baseURL = 'https://jsonplaceholder.typicode.com/users/'+userId;
+
+    fetch(baseURL)
+    .then(res=>res.json())
+    .then(data=> {
+            console.log(data)
+            let div1 = document.createElement('div')
+            document.body.appendChild(div1)
+            for (const resultKey in data) {
+                // console.log(resultKey, data[resultKey])
+                if (resultKey === 'address' || resultKey === 'company') {
+                    for (const key in data[resultKey]) {
+                        let p = document.createElement('p');
+                        div1.appendChild(p)
+                        p.innerText = `${key} - ${data[resultKey][key]}`
+                    }
+
+                } else if (resultKey.key === 'geo') {
+                    for (const key in data[resultKey].key) {
+                        let p1 = document.createElement('p');
+                        div1.appendChild(p1)
+                        p1.innerText = `${key} - ${data[resultKey][key]}`;
+                    }
+                } else {
+                    let div2 = document.createElement('div');
+                    div1.appendChild(div2)
+                    div2.innerText = `${resultKey} - ${data[resultKey]}`
+                }
+            }
+        }
+    )
+</script>
+</body>
+</html>

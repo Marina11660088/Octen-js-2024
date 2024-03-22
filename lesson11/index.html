@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .link{
+            background-color: darkseagreen;
+            width: 150px;
+
+        }
+    </style>
+</head>
+<body>
+
+
+<script>
+    // - взяти https://dummyjson.com/docs/carts та вивести інформацію про всі корзини. Відобразити всі поля кожної корзини.
+    //
+
+    // fetch('https://dummyjson.com/carts')
+    //     .then(res =>  res.json())
+    //     .then(carts => {
+    //         console.log(carts)
+    //         for (const cart of carts.carts) {
+    //             let div1=document.createElement('div');
+    //             document.body.appendChild(div1);
+    //             for (const cartElement of cart.products) {
+    //                 let h3 =document.createElement('h3');
+    //                 h3.innerText = cartElement.title;
+    //                 let img =document.createElement('img');
+    //                 img.src = cartElement.thumbnail;
+    //
+    //                 let p1 =document.createElement('p');
+    //                 p1.innerText = `price: ${cartElement.price}`;
+    //                 let span1 =document.createElement('span');
+    //                 span1.innerText = `discountPercentage:${cartElement.discountPercentage
+    //                 };`;
+    //                 let span2 =document.createElement('span');
+    //                 span2.innerText = `  discountedPrice:${cartElement.discountedPrice
+    //                 };`;
+    //                 let span3 =document.createElement('span');
+    //                 span3.innerText = `  quantity:${cartElement.quantity};`;
+    //                 let p2 =document.createElement('p');
+    //                 p2.innerText = `  total:${cartElement.total};`;
+    //
+    //
+    //                 document.body.append(h3,img, p1, span1, span2, span3,p2)
+    //             }
+    //
+    //         }
+    //
+    // });
+
+
+
+
+    //     - взяти https://dummyjson.com/docs/recipes та вивести інформацію про всі рецепти. Інгредієнти повинні бути список під час відображення.
+    //
+    // fetch('https://dummyjson.com/recipes')
+    //     .then(res => res.json())
+    //     .then(value=>{
+    //         console.log(value)
+    //         let div=document.createElement('div')
+    //         document.body.appendChild(div);
+    //
+    //         let {recipes} = value;
+    //         for (const recipe of recipes) {
+    //             let div1 =document.createElement('div');
+    //             div1.innerText =recipe.id;
+    //             let div2 =document.createElement('div');
+    //             div2.innerText =`caloriesPerServing: ${recipe.caloriesPerServing}`;
+    //             let div3 =document.createElement('div');
+    //             div3.innerText =`cuisine: ${recipe.cuisine}`;
+    //             let div4 =document.createElement('div');
+    //             div4.innerText =`difficulty: ${recipe.difficulty
+    //             }`;
+    //             let div5 =document.createElement('img');
+    //             div5.src =`image: ${recipe.image}`;
+    //             let div6 =document.createElement('div');
+    //             div6.innerText =`caloriesPerServing: ${recipe.caloriesPerServing}`;
+    //             let div7 =document.createElement('div');
+    //             div7.innerText =`name: ${recipe.name
+    //             }`;
+    //
+    //
+    //             let ingredients = document.createElement('div');
+    //             let ulIngredients = document.createElement('ul');
+    //             ulIngredients.innerHTML= '<h4>Ingredients:</h4>';
+    //             ingredients.append(ulIngredients);
+    //
+    //
+    //                      for (const ingredient of recipe.ingredients) {
+    //                          let liIngredients =document.createElement('li')
+    //                          liIngredients.innerText=ingredient;
+    //                          ulIngredients.appendChild(liIngredients);
+    //
+    //                      }
+    //
+    //            div.append(div1,div2,div3,div4,div5,div6,div7,ingredients);
+    //          }
+    //     })
+
+
+
+
+
+    //     - зробити файл users.html
+    // з ендпоінту http://jsonplaceholder.typicode.com/users отримати всіх користувачів
+    //     вивести їх id + name списком та додати посилання з href = user-details.html?id=XXX (замість ХХХ - айді юзера)
+    // при кліку на посилання перехід на відповідну сторінку, на якій буде вся інформація про користувача (всі 15 полів)
+    // отримана через додатковий запит (https://jsonplaceholder.typicode.com/users/XXX   де ХХХ - айді користувача)
+    //
+    // fetch('http://jsonplaceholder.typicode.com/users')
+    //     .then(res => res.json())
+    //     .then(value=>{
+    //         console.log(value)
+    //         let ul=document.createElement('ul')
+    //         document.body.appendChild(ul);
+    //
+    //         let {users} = value;
+    //         for (const user of users) {
+    //            let li =document.createElement('li');
+    //             li.innerText =user.id+" "+user.name;
+    //             ul.appendChild(li);
+    //         }
+    //
+    //     })
+
+
+
+     const URL = 'http://jsonplaceholder.typicode.com/users';
+     function getUsers(url) {
+         fetch(url)
+        .then (response => response.json())
+        .then(array => {
+            console.log(array);
+            let ul=document.createElement('ul')
+            document.body.appendChild(ul);
+            for (const user of array) {
+                let li =document.createElement('li');
+                li.innerText =user.id+" "+user.name;
+                ul.appendChild(li);
+                let p = document.createElement('p');
+                p.classList.add('link')
+                p.innerText="Перейти";
+                p.addEventListener('click',()=>{
+                    location.href='array.html?id=' + user.id;
+
+                })
+                ul.appendChild(p);
+            }
+        });
+     }
+     getUsers(URL)
+
+
+</script>
+
+</body>
+</html>

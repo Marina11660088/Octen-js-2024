@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d2b5429-c8ae-4af3-9420-535e4f03b80d" name="Changes" comment="lesson9hw">
-      <change afterPath="$PROJECT_DIR$/lesson10/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson10/sessions.html" afterDir="false" />
+    <list default="true" id="5d2b5429-c8ae-4af3-9420-535e4f03b80d" name="Changes" comment="lesson10hw">
+      <change afterPath="$PROJECT_DIR$/lesson11/array.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson11/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson10/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/lesson10/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +63,7 @@
       <workItem from="1709469573937" duration="2000" />
       <workItem from="1709469580409" duration="2000" />
       <workItem from="1709472107722" duration="1231000" />
-      <workItem from="1709499741254" duration="117906000" />
+      <workItem from="1709499741254" duration="144131000" />
     </task>
     <task id="LOCAL-00001" summary="lesson1">
       <option name="closed" value="true" />
@@ -144,7 +145,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710518495076</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="lesson10hw">
+      <option name="closed" value="true" />
+      <created>1710874967279</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1710874967279</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,7 +169,26 @@
     <MESSAGE value="lesson6hw" />
     <MESSAGE value="lesson8hw" />
     <MESSAGE value="lesson9hw" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson9hw" />
+    <MESSAGE value="lesson10hw" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson10hw" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/lesson10/index.html</url>
+          <line>113</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/lesson11/array.html</url>
+          <line>41</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
