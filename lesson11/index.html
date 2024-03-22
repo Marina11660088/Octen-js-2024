@@ -113,49 +113,33 @@
     //     вивести їх id + name списком та додати посилання з href = user-details.html?id=XXX (замість ХХХ - айді юзера)
     // при кліку на посилання перехід на відповідну сторінку, на якій буде вся інформація про користувача (всі 15 полів)
     // отримана через додатковий запит (https://jsonplaceholder.typicode.com/users/XXX   де ХХХ - айді користувача)
-    //
-    // fetch('http://jsonplaceholder.typicode.com/users')
-    //     .then(res => res.json())
-    //     .then(value=>{
-    //         console.log(value)
-    //         let ul=document.createElement('ul')
-    //         document.body.appendChild(ul);
-    //
-    //         let {users} = value;
-    //         for (const user of users) {
-    //            let li =document.createElement('li');
-    //             li.innerText =user.id+" "+user.name;
-    //             ul.appendChild(li);
-    //         }
-    //
-    //     })
 
 
 
-     const URL = 'http://jsonplaceholder.typicode.com/users';
-     function getUsers(url) {
-         fetch(url)
-        .then (response => response.json())
-        .then(array => {
-            console.log(array);
-            let ul=document.createElement('ul')
-            document.body.appendChild(ul);
-            for (const user of array) {
-                let li =document.createElement('li');
-                li.innerText =user.id+" "+user.name;
-                ul.appendChild(li);
-                let p = document.createElement('p');
-                p.classList.add('link')
-                p.innerText="Перейти";
-                p.addEventListener('click',()=>{
-                    location.href='array.html?id=' + user.id;
-
-                })
-                ul.appendChild(p);
-            }
-        });
-     }
-     getUsers(URL)
+     // const URL = 'http://jsonplaceholder.typicode.com/users';
+     // function getUsers(url) {
+     //     fetch(url)
+     //    .then (response => response.json())
+     //    .then(array => {
+     //        console.log(array);
+     //        let ul=document.createElement('ul')
+     //        document.body.appendChild(ul);
+     //        for (const user of array) {
+     //            let li =document.createElement('li');
+     //            li.innerText =user.id+" "+user.name;
+     //            ul.appendChild(li);
+     //            let p = document.createElement('p');
+     //            p.classList.add('link')
+     //            p.innerText="Перейти";
+     //            p.addEventListener('click',()=>{
+     //                location.href='array.html?id=' + user.id;
+     //
+     //            })
+     //            ul.appendChild(p);
+     //        }
+     //    });
+     // }
+     // getUsers(URL)
 
 
 </script>
